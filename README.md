@@ -1,4 +1,4 @@
-This is a copy from https://github.com/Benjerman/Minecraft-Server-Manager
+This is a copy of https://github.com/Benjerman/Minecraft-Server-Manager
 
 I've made some changes for me.
 
