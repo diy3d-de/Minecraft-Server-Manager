@@ -62,26 +62,25 @@
             this.lblServerRunning = new System.Windows.Forms.Label();
             this.lblServerRunningStatus = new System.Windows.Forms.Label();
             this.lblRunningServerVersion = new System.Windows.Forms.Label();
+            this.restartServerButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // txtOutput
             // 
             this.txtOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtOutput.Location = new System.Drawing.Point(12, 293);
-            this.txtOutput.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOutput.Location = new System.Drawing.Point(9, 238);
             this.txtOutput.Name = "txtOutput";
-            this.txtOutput.Size = new System.Drawing.Size(703, 464);
+            this.txtOutput.Size = new System.Drawing.Size(528, 378);
             this.txtOutput.TabIndex = 0;
             this.txtOutput.Text = "";
             // 
             // btnExecute
             // 
             this.btnExecute.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnExecute.Location = new System.Drawing.Point(724, 245);
-            this.btnExecute.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExecute.Location = new System.Drawing.Point(543, 199);
             this.btnExecute.Name = "btnExecute";
-            this.btnExecute.Size = new System.Drawing.Size(100, 25);
+            this.btnExecute.Size = new System.Drawing.Size(75, 20);
             this.btnExecute.TabIndex = 2;
             this.btnExecute.Text = "Execute";
             this.btnExecute.UseVisualStyleBackColor = true;
@@ -90,10 +89,9 @@
             // backupButton
             // 
             this.backupButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.backupButton.Location = new System.Drawing.Point(16, 149);
-            this.backupButton.Margin = new System.Windows.Forms.Padding(4);
+            this.backupButton.Location = new System.Drawing.Point(12, 146);
             this.backupButton.Name = "backupButton";
-            this.backupButton.Size = new System.Drawing.Size(137, 52);
+            this.backupButton.Size = new System.Drawing.Size(103, 34);
             this.backupButton.TabIndex = 4;
             this.backupButton.Text = "Backup World";
             this.backupButton.UseVisualStyleBackColor = true;
@@ -102,10 +100,9 @@
             // startServerButton
             // 
             this.startServerButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.startServerButton.Location = new System.Drawing.Point(16, 31);
-            this.startServerButton.Margin = new System.Windows.Forms.Padding(4);
+            this.startServerButton.Location = new System.Drawing.Point(12, 25);
             this.startServerButton.Name = "startServerButton";
-            this.startServerButton.Size = new System.Drawing.Size(137, 52);
+            this.startServerButton.Size = new System.Drawing.Size(103, 34);
             this.startServerButton.TabIndex = 5;
             this.startServerButton.Text = "Start Server";
             this.startServerButton.UseVisualStyleBackColor = true;
@@ -114,10 +111,9 @@
             // stopServerButton
             // 
             this.stopServerButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.stopServerButton.Location = new System.Drawing.Point(16, 90);
-            this.stopServerButton.Margin = new System.Windows.Forms.Padding(4);
+            this.stopServerButton.Location = new System.Drawing.Point(12, 65);
             this.stopServerButton.Name = "stopServerButton";
-            this.stopServerButton.Size = new System.Drawing.Size(137, 52);
+            this.stopServerButton.Size = new System.Drawing.Size(103, 34);
             this.stopServerButton.TabIndex = 6;
             this.stopServerButton.Text = "Stop Server";
             this.stopServerButton.UseVisualStyleBackColor = true;
@@ -127,10 +123,9 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(9, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 17);
+            this.label1.Size = new System.Drawing.Size(106, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "Server Administration";
             // 
@@ -139,10 +134,9 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 273);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(6, 222);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 17);
+            this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Server Output";
             // 
@@ -151,40 +145,36 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 225);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(6, 183);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 17);
+            this.label3.Size = new System.Drawing.Size(82, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Enter Command";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(237, 11);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(178, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 17);
+            this.label4.Size = new System.Drawing.Size(91, 13);
             this.label4.TabIndex = 10;
             this.label4.Text = "Admin Commands";
             // 
             // weatherComboBox
             // 
             this.weatherComboBox.FormattingEnabled = true;
-            this.weatherComboBox.Location = new System.Drawing.Point(349, 32);
-            this.weatherComboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.weatherComboBox.Location = new System.Drawing.Point(262, 26);
             this.weatherComboBox.Name = "weatherComboBox";
-            this.weatherComboBox.Size = new System.Drawing.Size(160, 24);
+            this.weatherComboBox.Size = new System.Drawing.Size(121, 21);
             this.weatherComboBox.TabIndex = 11;
             this.weatherComboBox.SelectedIndexChanged += new System.EventHandler(this.weatherComboBox_SelectedIndexChanged);
             this.weatherComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.weatherComboBox_KeyDown);
             // 
             // setWeatherButton
             // 
-            this.setWeatherButton.Location = new System.Drawing.Point(241, 31);
-            this.setWeatherButton.Margin = new System.Windows.Forms.Padding(4);
+            this.setWeatherButton.Location = new System.Drawing.Point(181, 25);
             this.setWeatherButton.Name = "setWeatherButton";
-            this.setWeatherButton.Size = new System.Drawing.Size(100, 26);
+            this.setWeatherButton.Size = new System.Drawing.Size(75, 21);
             this.setWeatherButton.TabIndex = 12;
             this.setWeatherButton.Text = "Set Weather";
             this.setWeatherButton.UseVisualStyleBackColor = true;
@@ -192,10 +182,9 @@
             // 
             // opPlayerButton
             // 
-            this.opPlayerButton.Location = new System.Drawing.Point(241, 64);
-            this.opPlayerButton.Margin = new System.Windows.Forms.Padding(4);
+            this.opPlayerButton.Location = new System.Drawing.Point(181, 52);
             this.opPlayerButton.Name = "opPlayerButton";
-            this.opPlayerButton.Size = new System.Drawing.Size(100, 26);
+            this.opPlayerButton.Size = new System.Drawing.Size(75, 21);
             this.opPlayerButton.TabIndex = 13;
             this.opPlayerButton.Text = "OP Player";
             this.opPlayerButton.UseVisualStyleBackColor = true;
@@ -203,19 +192,17 @@
             // 
             // opPlayerTextBox1
             // 
-            this.opPlayerTextBox1.Location = new System.Drawing.Point(349, 65);
-            this.opPlayerTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.opPlayerTextBox1.Location = new System.Drawing.Point(262, 53);
             this.opPlayerTextBox1.Name = "opPlayerTextBox1";
-            this.opPlayerTextBox1.Size = new System.Drawing.Size(160, 22);
+            this.opPlayerTextBox1.Size = new System.Drawing.Size(121, 20);
             this.opPlayerTextBox1.TabIndex = 14;
             this.opPlayerTextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.opPlayerTextBox1_KeyDown);
             // 
             // deOpPlayerButton
             // 
-            this.deOpPlayerButton.Location = new System.Drawing.Point(241, 97);
-            this.deOpPlayerButton.Margin = new System.Windows.Forms.Padding(4);
+            this.deOpPlayerButton.Location = new System.Drawing.Point(181, 79);
             this.deOpPlayerButton.Name = "deOpPlayerButton";
-            this.deOpPlayerButton.Size = new System.Drawing.Size(100, 26);
+            this.deOpPlayerButton.Size = new System.Drawing.Size(75, 21);
             this.deOpPlayerButton.TabIndex = 15;
             this.deOpPlayerButton.Text = "DeOp Player";
             this.deOpPlayerButton.UseVisualStyleBackColor = true;
@@ -223,19 +210,17 @@
             // 
             // deOpTextBox1
             // 
-            this.deOpTextBox1.Location = new System.Drawing.Point(349, 98);
-            this.deOpTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.deOpTextBox1.Location = new System.Drawing.Point(262, 80);
             this.deOpTextBox1.Name = "deOpTextBox1";
-            this.deOpTextBox1.Size = new System.Drawing.Size(160, 22);
+            this.deOpTextBox1.Size = new System.Drawing.Size(121, 20);
             this.deOpTextBox1.TabIndex = 16;
             this.deOpTextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.deOpTextBox1_KeyDown);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(241, 130);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(181, 106);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 17;
             this.button1.Text = "Game Rule";
             this.button1.UseVisualStyleBackColor = true;
@@ -244,20 +229,18 @@
             // gameRuleComboBox
             // 
             this.gameRuleComboBox.FormattingEnabled = true;
-            this.gameRuleComboBox.Location = new System.Drawing.Point(349, 130);
-            this.gameRuleComboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.gameRuleComboBox.Location = new System.Drawing.Point(262, 106);
             this.gameRuleComboBox.Name = "gameRuleComboBox";
-            this.gameRuleComboBox.Size = new System.Drawing.Size(160, 24);
+            this.gameRuleComboBox.Size = new System.Drawing.Size(121, 21);
             this.gameRuleComboBox.TabIndex = 18;
             this.gameRuleComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gameRuleComboBox_KeyDown);
             // 
             // trueGRRadioButton
             // 
             this.trueGRRadioButton.AutoSize = true;
-            this.trueGRRadioButton.Location = new System.Drawing.Point(519, 134);
-            this.trueGRRadioButton.Margin = new System.Windows.Forms.Padding(4);
+            this.trueGRRadioButton.Location = new System.Drawing.Point(389, 109);
             this.trueGRRadioButton.Name = "trueGRRadioButton";
-            this.trueGRRadioButton.Size = new System.Drawing.Size(59, 21);
+            this.trueGRRadioButton.Size = new System.Drawing.Size(47, 17);
             this.trueGRRadioButton.TabIndex = 19;
             this.trueGRRadioButton.TabStop = true;
             this.trueGRRadioButton.Text = "True";
@@ -267,10 +250,9 @@
             // falseGRRadioButton2
             // 
             this.falseGRRadioButton2.AutoSize = true;
-            this.falseGRRadioButton2.Location = new System.Drawing.Point(589, 134);
-            this.falseGRRadioButton2.Margin = new System.Windows.Forms.Padding(4);
+            this.falseGRRadioButton2.Location = new System.Drawing.Point(442, 109);
             this.falseGRRadioButton2.Name = "falseGRRadioButton2";
-            this.falseGRRadioButton2.Size = new System.Drawing.Size(63, 21);
+            this.falseGRRadioButton2.Size = new System.Drawing.Size(50, 17);
             this.falseGRRadioButton2.TabIndex = 20;
             this.falseGRRadioButton2.TabStop = true;
             this.falseGRRadioButton2.Text = "False";
@@ -282,30 +264,27 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(1001, 273);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(751, 222);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 17);
+            this.label5.Size = new System.Drawing.Size(77, 13);
             this.label5.TabIndex = 21;
             this.label5.Text = "Players Online:";
             // 
             // playerTxtOutput
             // 
             this.playerTxtOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.playerTxtOutput.Location = new System.Drawing.Point(1005, 293);
-            this.playerTxtOutput.Margin = new System.Windows.Forms.Padding(4);
+            this.playerTxtOutput.Location = new System.Drawing.Point(754, 238);
             this.playerTxtOutput.Multiline = true;
             this.playerTxtOutput.Name = "playerTxtOutput";
-            this.playerTxtOutput.Size = new System.Drawing.Size(215, 464);
+            this.playerTxtOutput.Size = new System.Drawing.Size(162, 378);
             this.playerTxtOutput.TabIndex = 22;
             // 
             // txtInputCommand
             // 
             this.txtInputCommand.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtInputCommand.Location = new System.Drawing.Point(12, 245);
-            this.txtInputCommand.Margin = new System.Windows.Forms.Padding(4);
+            this.txtInputCommand.Location = new System.Drawing.Point(9, 199);
             this.txtInputCommand.Name = "txtInputCommand";
-            this.txtInputCommand.Size = new System.Drawing.Size(703, 22);
+            this.txtInputCommand.Size = new System.Drawing.Size(528, 20);
             this.txtInputCommand.TabIndex = 23;
             this.txtInputCommand.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtInputCommand_KeyDown);
             // 
@@ -316,10 +295,9 @@
             // startServerCheckbox
             // 
             this.startServerCheckbox.AutoSize = true;
-            this.startServerCheckbox.Location = new System.Drawing.Point(724, 31);
-            this.startServerCheckbox.Margin = new System.Windows.Forms.Padding(4);
+            this.startServerCheckbox.Location = new System.Drawing.Point(543, 25);
             this.startServerCheckbox.Name = "startServerCheckbox";
-            this.startServerCheckbox.Size = new System.Drawing.Size(190, 21);
+            this.startServerCheckbox.Size = new System.Drawing.Size(144, 17);
             this.startServerCheckbox.TabIndex = 24;
             this.startServerCheckbox.Text = "Start server automatically";
             this.startServerCheckbox.UseVisualStyleBackColor = true;
@@ -327,31 +305,28 @@
             // 
             // gameRulesTxt
             // 
-            this.gameRulesTxt.Location = new System.Drawing.Point(724, 293);
-            this.gameRulesTxt.Margin = new System.Windows.Forms.Padding(4);
+            this.gameRulesTxt.Location = new System.Drawing.Point(543, 238);
             this.gameRulesTxt.Multiline = true;
             this.gameRulesTxt.Name = "gameRulesTxt";
-            this.gameRulesTxt.Size = new System.Drawing.Size(272, 464);
+            this.gameRulesTxt.Size = new System.Drawing.Size(205, 378);
             this.gameRulesTxt.TabIndex = 25;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(720, 273);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(540, 222);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(137, 17);
+            this.label6.Size = new System.Drawing.Size(102, 13);
             this.label6.TabIndex = 26;
             this.label6.Text = "Current Game Rules";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.Location = new System.Drawing.Point(724, 111);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePicker1.Location = new System.Drawing.Point(543, 90);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.ShowUpDown = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(223, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(168, 20);
             this.dateTimePicker1.TabIndex = 27;
             this.dateTimePicker1.Value = new System.DateTime(2020, 1, 18, 12, 1, 0, 0);
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
@@ -359,10 +334,9 @@
             // automaticBackupsCheckBox
             // 
             this.automaticBackupsCheckBox.AutoSize = true;
-            this.automaticBackupsCheckBox.Location = new System.Drawing.Point(724, 59);
-            this.automaticBackupsCheckBox.Margin = new System.Windows.Forms.Padding(4);
+            this.automaticBackupsCheckBox.Location = new System.Drawing.Point(543, 48);
             this.automaticBackupsCheckBox.Name = "automaticBackupsCheckBox";
-            this.automaticBackupsCheckBox.Size = new System.Drawing.Size(149, 21);
+            this.automaticBackupsCheckBox.Size = new System.Drawing.Size(117, 17);
             this.automaticBackupsCheckBox.TabIndex = 28;
             this.automaticBackupsCheckBox.Text = "Automatic backups";
             this.automaticBackupsCheckBox.UseVisualStyleBackColor = true;
@@ -371,10 +345,9 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(720, 90);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(540, 73);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 17);
+            this.label7.Size = new System.Drawing.Size(66, 13);
             this.label7.TabIndex = 29;
             this.label7.Text = "Backup time";
             // 
@@ -382,10 +355,9 @@
             // 
             this.picLogo.Image = global::Minecraft_Server_Manager.Properties.Resources.minecraft_ico_300x300;
             this.picLogo.InitialImage = null;
-            this.picLogo.Location = new System.Drawing.Point(1005, 31);
-            this.picLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.picLogo.Location = new System.Drawing.Point(754, 25);
             this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(200, 185);
+            this.picLogo.Size = new System.Drawing.Size(150, 150);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogo.TabIndex = 30;
             this.picLogo.TabStop = false;
@@ -393,33 +365,47 @@
             // lblServerRunning
             // 
             this.lblServerRunning.AutoSize = true;
-            this.lblServerRunning.Location = new System.Drawing.Point(240, 194);
+            this.lblServerRunning.Location = new System.Drawing.Point(540, 116);
+            this.lblServerRunning.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblServerRunning.Name = "lblServerRunning";
-            this.lblServerRunning.Size = new System.Drawing.Size(96, 17);
+            this.lblServerRunning.Size = new System.Drawing.Size(72, 13);
             this.lblServerRunning.TabIndex = 32;
             this.lblServerRunning.Text = "Server status:";
             // 
             // lblServerRunningStatus
             // 
             this.lblServerRunningStatus.AutoSize = true;
-            this.lblServerRunningStatus.Location = new System.Drawing.Point(349, 193);
+            this.lblServerRunningStatus.Location = new System.Drawing.Point(622, 115);
+            this.lblServerRunningStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblServerRunningStatus.Name = "lblServerRunningStatus";
-            this.lblServerRunningStatus.Size = new System.Drawing.Size(0, 17);
+            this.lblServerRunningStatus.Size = new System.Drawing.Size(0, 13);
             this.lblServerRunningStatus.TabIndex = 33;
             // 
             // lblRunningServerVersion
             // 
             this.lblRunningServerVersion.AutoSize = true;
-            this.lblRunningServerVersion.Location = new System.Drawing.Point(240, 211);
+            this.lblRunningServerVersion.Location = new System.Drawing.Point(540, 129);
+            this.lblRunningServerVersion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRunningServerVersion.Name = "lblRunningServerVersion";
-            this.lblRunningServerVersion.Size = new System.Drawing.Size(0, 17);
+            this.lblRunningServerVersion.Size = new System.Drawing.Size(0, 13);
             this.lblRunningServerVersion.TabIndex = 35;
+            // 
+            // restartServerButton
+            // 
+            this.restartServerButton.Location = new System.Drawing.Point(13, 106);
+            this.restartServerButton.Name = "restartServerButton";
+            this.restartServerButton.Size = new System.Drawing.Size(103, 34);
+            this.restartServerButton.TabIndex = 36;
+            this.restartServerButton.Text = "Restart Server";
+            this.restartServerButton.UseVisualStyleBackColor = true;
+            this.restartServerButton.Click += new System.EventHandler(this.restartServerButton_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1229, 773);
+            this.ClientSize = new System.Drawing.Size(922, 628);
+            this.Controls.Add(this.restartServerButton);
             this.Controls.Add(this.lblRunningServerVersion);
             this.Controls.Add(this.lblServerRunningStatus);
             this.Controls.Add(this.lblServerRunning);
@@ -454,7 +440,6 @@
             this.Controls.Add(this.txtOutput);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
@@ -500,6 +485,7 @@
         private System.Windows.Forms.Label lblServerRunning;
         private System.Windows.Forms.Label lblServerRunningStatus;
         private System.Windows.Forms.Label lblRunningServerVersion;
+        private System.Windows.Forms.Button restartServerButton;
     }
 }
 

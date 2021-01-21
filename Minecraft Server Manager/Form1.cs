@@ -86,6 +86,7 @@ namespace Minecraft_Server_Manager
             lblServerRunningStatus.Text = "stopped ...";
 
             stopServerButton.Enabled = false;
+            restartServerButton.Enabled = false;
 
             if (startServer == "true")
             {
@@ -296,6 +297,8 @@ namespace Minecraft_Server_Manager
             serverRunning = true;
             lblServerRunningStatus.BackColor = System.Drawing.Color.MediumSeaGreen;
             lblServerRunningStatus.Text = "running ...";
+
+            restartServerButton.Enabled = true;
         }
 
         private void stopServerButton_Click(object sender, EventArgs e)
@@ -573,6 +576,59 @@ namespace Minecraft_Server_Manager
                 configuration.Save(ConfigurationSaveMode.Modified);
             }
 
+        }
+
+        private void restartServerButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                startServerButton.Enabled = false;
+                backupButton.Enabled = false;
+                //playerTxtOutput.Clear();
+                //gameRulesTxt.Clear();
+                
+                mcInputStream.WriteLine("say THE SERVER IS GOING DOWN FOR A RESTART IN 10 SECONDS");
+                txtOutput.AppendText("\r\n\r\nTelling players the server will be restart in 10 seconds\r\n");
+                File.AppendAllText(@"ServerLog.csv", "\r\n" + DateTime.Now.ToString() + " " + "Telling players the server will be restart in 10 seconds\r\n");
+
+
+                Thread.Sleep(10000);
+                txtOutput.AppendText("\r\nStopping Server\r\n");
+                File.AppendAllText(@"ServerLog.csv", DateTime.Now.ToString() + " " + "Stopping Server\r\n");
+                mcInputStream.WriteLine("stop");
+                Thread.Sleep(5000);
+
+                txtOutput.AppendText("\r\nStarting Server\r\n");
+                File.AppendAllText(@"ServerLog.csv", DateTime.Now.ToString() + " " + "Starting Server\r\n");
+
+                Thread.Sleep(5000);
+                startServerButton_Click(sender, e);
+
+
+              
+
+
+                startServerButton.Enabled = false;
+                stopServerButton.Enabled = false;
+
+                backupButton.Enabled = false;
+                restartServerButton.Enabled = false;
+
+                //serverRunning = false;
+
+                lblServerRunningStatus.BackColor = System.Drawing.Color.OrangeRed;
+                lblServerRunningStatus.Text = "restarting Server ...";
+                // lblRunningServerVersion.Text = "";
+
+                backupButton.Enabled = true;
+                stopServerButton.Enabled = true;
+                restartServerButton.Enabled = true;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
     }
