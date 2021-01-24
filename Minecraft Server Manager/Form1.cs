@@ -624,6 +624,8 @@ namespace Minecraft_Server_Manager
                 stopServerButton.Enabled = true;
                 restartServerButton.Enabled = true;
 
+                lblServerRunningStatus.Text = "server running...";
+
             }
             catch (Exception ex)
             {
